@@ -17,5 +17,14 @@
 		"terminalIndex": -1,
 		"showTerminal": true,
 		"vscCommand": ""
+	}, {
+		"name": "Initialize",
+		"type": "f5anything",
+		"request": "launch",
+		"command": "npm install",
+		"terminalName": "F5 Anything",
+		"terminalIndex": -1,
+		"showTerminal": true,
+		"vscCommand": ""
 	}]
 }
