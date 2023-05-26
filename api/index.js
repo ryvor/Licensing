@@ -1,7 +1,12 @@
 
 const query = new URLSearchParams(window.location.search);
 
-window[query.get('$')]();
+if (query.has('$')) {
+	const functionName = query.get('$');
+	if (window[functionName] && typeof window[functionName] === 'function') {
+		window[functionName]();
+	}
+}
 
 // VALIDATE KEYS
 var Validate = () => {
