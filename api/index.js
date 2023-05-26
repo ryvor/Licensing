@@ -7,7 +7,7 @@
 // VALIDATE KEYS
 function Validate() {
 	var PROJ, KEY, UA;
-	if((PROJ=query.get('project')) !== 0 && (KEY=query.get('key')) !== 0 && (UA=query.get('agent')) !== 0 ) {
+	if((PROJ=params['project']) !== 0 && (KEY=params['key']) !== 0 && (UA=params['agent']) !== 0 ) {
 		// VALIDATE THE CODE AND UPLOAD TO THE ACCESS LOG
 		if(KEY == '000000-000000-000000-000000-000000') {
 			var res = {
