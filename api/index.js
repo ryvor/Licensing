@@ -7,4 +7,4 @@ const params = new URLSearchParams(queryString);
 // Get the value of a specific parameter
 const paramValue = params.get('key');
 
-console.log(paramValue);
+console.log(params);
