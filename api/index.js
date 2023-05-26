@@ -1,3 +1,9 @@
+//
+//
+//
+//
+//
+
 // VALIDATE KEYS
 function Validate() {
 	var PROJ, KEY, UA;
@@ -14,6 +20,6 @@ function Validate() {
 				info: query,
 			}
 		}
-		Document.write(JSON.stringify(res));
+		document.write(JSON.stringify(res));
 	}
 }
