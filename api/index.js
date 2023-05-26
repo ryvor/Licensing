@@ -9,7 +9,7 @@ if (query.has('$')) {
 }
 
 // VALIDATE KEYS
-var Validate = () => {
+function Validate() {
 	var PROJ, KEY, UA;
 	if((PROJ=query.get('project')) !== 0 && (KEY=query.get('key')) !== 0 && (UA=query.get('agent')) !== 0 ) {
 		console.log(PROJ);
