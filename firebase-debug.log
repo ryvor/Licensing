@@ -1,0 +1,44 @@
+[debug] [2023-05-26T19:08:27.199Z] ----------------------------------------------------------------------
+[debug] [2023-05-26T19:08:27.206Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\RSmit\OneDrive\Github\ryvor\Licensing\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --inspect-functions
+[debug] [2023-05-26T19:08:27.208Z] CLI Version:   12.2.1
+[debug] [2023-05-26T19:08:27.209Z] Platform:      win32
+[debug] [2023-05-26T19:08:27.210Z] Node Version:  v20.2.0
+[debug] [2023-05-26T19:08:27.210Z] Time:          Fri May 26 2023 20:08:27 GMT+0100 (British Summer Time)
+[debug] [2023-05-26T19:08:27.210Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-26T19:08:27.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-26T19:08:27.519Z] > authorizing via signed-in user (wolfhoundxd.13@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-05-26T19:08:27.555Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-26T19:08:27.556Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-05-26T19:08:27.557Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-05-26T19:08:27.602Z] [hub] writing locator at C:\Users\RSmit\AppData\Local\Temp\hub-ryvor-licensing.json
+[debug] [2023-05-26T19:08:27.694Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ryvor-licensing/sites 
+[debug] [2023-05-26T19:08:28.534Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ryvor-licensing/sites 200
+[debug] [2023-05-26T19:08:28.535Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ryvor-licensing/sites {"sites":[{"name":"projects/ryvor-licensing/sites/ryvor-licensing","defaultUrl":"https://ryvor-licensing.web.app","appId":"1:156101015933:web:8ed8d41b8fe50b2d24b414","type":"DEFAULT_SITE"}]}
+[debug] [2023-05-26T19:08:28.535Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing/webApps/1:156101015933:web:8ed8d41b8fe50b2d24b414/config [none]
+[debug] [2023-05-26T19:08:29.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing/webApps/1:156101015933:web:8ed8d41b8fe50b2d24b414/config 200
+[debug] [2023-05-26T19:08:29.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing/webApps/1:156101015933:web:8ed8d41b8fe50b2d24b414/config {"projectId":"ryvor-licensing","appId":"1:156101015933:web:8ed8d41b8fe50b2d24b414","storageBucket":"ryvor-licensing.appspot.com","apiKey":"AIzaSyB4SsraiHkFbdAFwMVkigNE_xzAQWQg1uU","authDomain":"ryvor-licensing.firebaseapp.com","messagingSenderId":"156101015933","measurementId":"G-L4PF9XH2J5"}
+[debug] [2023-05-26T19:08:29.401Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing [none]
+[debug] [2023-05-26T19:08:29.605Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing 200
+[debug] [2023-05-26T19:08:29.606Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryvor-licensing {"projectId":"ryvor-licensing","projectNumber":"156101015933","displayName":"Licensing","name":"projects/ryvor-licensing","resources":{"hostingSite":"ryvor-licensing"},"state":"ACTIVE","etag":"1_30d8018b-acb1-4688-8e35-993e4efff902"}
+[info] i  hosting[ryvor-licensing]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[ryvor-licensing]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [26/May/2023:19:08:30 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/May/2023:19:08:30 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50\""}}
+[info] i  hosting: 127.0.0.1 - - [26/May/2023:19:08:31 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/May/2023:19:08:31 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 Edg/113.0.1774.50\""}}

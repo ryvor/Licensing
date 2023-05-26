@@ -1,25 +1,21 @@
 {
-	// Use IntelliSense to learn about possible attributes.
-	// Hover to view descriptions of existing attributes.
-	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-	"version": "0.2.0",
 	"configurations": [{
-		"type": "node",
-		"request": "attach",
 		"name": "Debug",
-		"port": 9229,
-		"restart": true,
-		"skipFiles": ["<node_internals>/**"],
-		"preLaunchTask": "./node_modules/.bin/firebase emulators:start",
-		"postDebugTask": "./node_modules/.bin/firebase emulators:stop"
-	  }, {
-		"type": "node",
+		"type": "f5anything",
 		"request": "launch",
-		"name": "Launch Program",
-		"skipFiles": [
-			"<node_internals>/**"
-		],
-		"program": "./node_modules/.bin/firebase deploy"
-	  }
-	]
+		"command": "start http://localhost:5000/; ./node_modules/.bin/firebase emulators:start --inspect-functions;",
+		"terminalName": "F5 Anything",
+		"terminalIndex": 1,
+		"showTerminal": true,
+		"vscCommand": ""
+	}, {
+		"name": "Deploy",
+		"type": "f5anything",
+		"request": "launch",
+		"command": "./node_modules/.bin/firebase Deploy --inspect-functions",
+		"terminalName": "F5 Anything",
+		"terminalIndex": -1,
+		"showTerminal": true,
+		"vscCommand": ""
+	}]
 }
