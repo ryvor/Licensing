@@ -1,6 +1,8 @@
 
 const query = new URLSearchParams(window.location.search);
 
+window[query.get('$')]();
+
 // VALIDATE KEYS
 var Validate = () => {
 	var PROJ, KEY, UA;
