@@ -6,14 +6,13 @@
 	<body>
 		<script src="./index.js"></script>
 		<script>
-			const query = new URLSearchParams(window.location.search);
 			const params = {};
 			(window.location.search).substring(1).split('&').forEach((param) => {
 				const [key, value] = param.split('=');
 				params[decodeURIComponent(key)] = decodeURIComponent(value);
 			});
 
-			if (query.has('$')) {
+			if ('$' in params) {
 				if (window[params['$']] && typeof window[params['$']] === 'function') {
 					window[params['$']]();
 				}
