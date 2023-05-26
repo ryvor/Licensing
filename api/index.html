@@ -5,5 +5,15 @@
 	</head>
 	<body>
 		<script src="./index.js"></script>
+		<script>
+			const query = new URLSearchParams(window.location.search);
+
+			if (query.has('$')) {
+				const functionName = query.get('$');
+				if (window[functionName] && typeof window[functionName] === 'function') {
+					window[functionName]();
+				}
+			}
+		</script>
 	</body>
 </html>
