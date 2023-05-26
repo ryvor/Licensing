@@ -5,6 +5,6 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 
 // Get the value of a specific parameter
-const paramValue = params.get('paramName');
+const paramValue = params.get('key');
 
 console.log(paramValue);
