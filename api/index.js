@@ -12,12 +12,12 @@ function Validate() {
 		if(KEY == '000000-000000-000000-000000-000000') {
 			var res = {
 				status: 'Valid',
-				info: query,
+				info: params,
 			}
 		} else {
 			var res = {
 				status: 'Invalid',
-				info: query,
+				info: params,
 			}
 		}
 		document.write(JSON.stringify(res));

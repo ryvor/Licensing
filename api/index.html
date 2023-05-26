@@ -7,20 +7,17 @@
 		<script src="./index.js"></script>
 		<script>
 			const query = new URLSearchParams(window.location.search);
-
-			if (query.has('$')) {
-				const functionName = query.get('$');
-				if (window[functionName] && typeof window[functionName] === 'function') {
-					window[functionName]();
-				}
-			}
-
 			const params = {};
 			(window.location.search).substring(1).split('&').forEach((param) => {
 				const [key, value] = param.split('=');
 				params[decodeURIComponent(key)] = decodeURIComponent(value);
 			});
-			console.log(params)
+
+			if (query.has('$')) {
+				if (window[params['$']] && typeof window[params['$']] === 'function') {
+					window[params['$']]();
+				}
+			}
 		</script>
 	</body>
 </html>
