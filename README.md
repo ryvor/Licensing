@@ -36,4 +36,10 @@ After you login you can optionally confirm if the login worked by checking if yo
 .\node_modules\.bin\firebase projects:list
 ```
 
+After that you need to initializew tthe actual api itself. cd into the api foolder and run the following command
+
+``` node
+npm install
+```
+
 After that the project should all be setup. Use the debug options to debug or deploy!
